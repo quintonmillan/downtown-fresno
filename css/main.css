@@ -1,0 +1,447 @@
+/*GLOBAL STYLES*/
+
+/*
+==============
+GLOBAL STYLES
+==============
+*/
+
+/* * {color:#000000;} BE CARFUL USING THIS | COULD BE DANGEROUS*/
+
+html, body {
+    height:100%;
+}
+
+body {
+    margin:0px;
+    padding:0px;
+    background-color:#000000;
+    font-family:'Lucida Sans', Verdana, sans-serif;
+    font-size:16px;
+    font-weight:500;
+    color:#FF0000;
+}
+
+@media screen and (max-width: 600px) {
+    body {background-color:#FF0000;}
+    h1 {color:#000000;}
+}
+
+h1, h2, h3 1{
+color:#FF0000;
+margin:0px;
+padding:0px;
+}
+
+h1 {
+    font-size:3em;
+}
+
+p {
+    margin:15px 0px;
+    line-height:15px;
+}
+
+strong, b {
+    color:#FF0000;
+}
+
+a {
+   color:#FF0000;
+   text-decoration:none;
+
+}
+
+a:hover {
+    color:#000000;
+}
+
+figure {
+    margin:0px;
+    padding:0px;
+}
+
+hr {
+    margin:25px 0px;
+}
+
+/*HEADER STYLES*/
+
+header {
+    background-color:#000000;
+    /*height:150px;*/
+}
+
+#header {
+    padding:15px 0px;
+    position:relative;
+}
+
+#logo {
+    padding:15px;
+    color:#F1F1F1;
+}
+
+#logo:hover {
+    color:#000000;
+    text-decoration:none;
+}
+
+/*NAV STYLES*/
+
+#menu {
+    position:absolute;
+    top:30px;
+    right:5%;
+    text-decoration:none;
+}
+
+/*#menu ul {*/
+/*    display:block;*/
+/*    background-color:#000000;*/
+/*}*/
+
+#menu li {
+    display:inline;
+    background-color:#000000);
+    text-transform:uppercase;
+    text-align:center;
+}
+
+#menu li a:hover{
+    color:#F1F1F1;
+}
+
+#menu li:after{
+    content:"";
+    padding:16px 10px;
+    color:#F1F1F1;
+}
+
+li:currentPage {
+    color:#FFFF00;
+}
+
+#name:hover {
+    color:#FF6600;
+}
+
+.currentPage a {
+    color:#FFFF00;
+}
+
+#bannerHome {
+    border-top:3px solid #AD5CFF;
+    padding:90px 0px;
+    background:url(../images/allBlacks.jpg) no-repeat bottom center #000000;
+    background-size:cover;
+    overflow:hidden;
+}
+
+.bannerAbout {
+    border-top:3px solid #AD5CFF;
+    padding:90px 0px;
+    background:url(../images/banner-about.jpg) no-repeat center center #000000;
+    background-size:cover;
+    overflow:hidden;
+}
+
+.bannerTitle {
+    text-align:center;
+    color:#FF0000;
+    background-color:transparent;
+    font-size:3em;
+    text-shadow:4px 4px #000000;
+}
+
+.mainWidth {
+    width:1200px;
+    margin:0px auto;
+    overflow:hidden;
+}
+
+#main {
+    margin-bottom:25px;
+}
+
+.columnA, .columnB, .columnC {
+    width:384px;
+}
+
+.columnA, .columnB {
+    float:left;
+    margin-right:24px;
+}
+
+#main {
+    margin-bottom:25px;
+}
+
+.columnC {
+    float:right;
+}
+
+.columnA h2, .columnB h2, .columnC h2 {
+    color:#FF0000;
+    font-size:28px;
+    font-weight:600;
+    text-transform:none;
+    text-align:center;
+}
+
+.columnA h2, .columnB h2, .columnC h2 {
+    padding:0px;
+}
+
+.likeImage {
+    width:384px;
+    height:300px;
+    background-color:#000000;
+}
+
+.likeImage span {
+    color:#FF0000;
+    display:block;
+    font-size:25px;
+    background-color:#000000;
+    text-align:center;
+    text-transform:uppercase;
+    padding:18px 0px;
+}
+
+/*BUTTON STYLES*/
+
+a.blackButton {
+    background-color:#191919;
+    border-radius:5px;
+    padding:5px 10px;
+    border:3px solid #FF0000;
+    text-decoration:uppercase;
+    margin:3px;
+    margin-top:15px;
+    margin-bottom:5px;
+    float:left;
+    width: 130px
+    text-align:center;
+    margin:0px auto;
+    
+
+}
+
+.blackButton:hover {
+    background-color:#FF0000;
+    color:#000000;
+    border:3px solid #191919;
+    cursor:url(../images/stop-two.png), auto;
+}
+
+#bannerButton {
+    width:155px;
+    margin:0px auto;
+}
+
+/*ABOUT ME STYLES*/
+
+.alignLeft {
+    float:left;
+    width:384px;
+    margin-right:24px;
+}
+
+.alignRight {
+    float:right;
+    width:792px;
+    text-align:justify;
+}
+
+/*FOOTER STYLES*/
+footer {
+    clear:both;
+    margin-top:15px;
+}
+
+.copyRight {
+    overflow:hidden;
+    padding:30px 0px;
+    border-top:3px dotted #191919;
+    background-color:#000000;
+    display:block;
+}
+
+/*#footerButton {*/
+/*    color:#191919;    */
+/*}*/
+
+/*#footerButton:hover {*/
+/*    color:#FF0000;*/
+/*}*/
+
+footer p {
+    text-align:center;
+    font-size:18px;
+    margin-top:15px;
+}
+
+.social {
+    text-align:center;
+}
+
+.copyRight p a {
+    color:#191919;
+}
+
+.copyRight p a:hover {
+    color:#FF0000;
+}
+
+.fa {
+    background-color:#000000;
+    border:3px solid #000000;
+    font-size:1.5em !important;
+    margin:2px;
+    height:28px;
+    width:28px;
+    padding:10px;
+    border-radius:100%;
+    text-align:center;
+    color:#FF0000;
+    
+    
+}
+
+.fa:hover {
+    background-color:#000000;
+    color:#FF0000;
+}
+
+.fa-linkedin {background-color:#000000;}
+
+#sonyThing {
+    text-align:center;
+}
+
+#bannerHome {
+    padding:90px;
+    background:url(../images/allBlacks.jpg);
+    background-color:transparent;
+}
+
+#myData {
+    width:900px;
+    margin:0px auto;
+}
+
+#myHeader th {
+    background-color:#191919;
+    color:#FF0000;
+    padding:10px;
+    font-size:1.25em;
+}
+
+#groupHeader th {
+    background-color:#191919;
+    color:#FF0000;
+    padding:10px;
+    font-size:1.25em;
+}
+
+#groupData {
+    width:900px;
+    margin:0px auto;
+}
+
+.weeks {
+    background-color:#191919;
+}
+
+th.black {
+    background-color:#000000;
+}
+
+.grayShade:hover {
+    background-color:#FF0000;
+    color:#FFFFFF;
+}
+
+table {
+    text-align:center;
+    border-radius:6px;
+}
+
+.asterisk {
+    color:#FFFF00;
+    font-weight:900;
+}
+
+/*form {*/
+/*    margin-top:25px;*/
+/*    padding:5px;*/
+/*    background-color:#191919;*/
+/*    border-radius:15px;*/
+/*    width:550px;*/
+/*    height:500px;*/
+/*}*/
+
+input#private,#email,#username, textarea {
+    border-radius:15px;
+    box-shadow:3px 3px 3px #FFFF00;
+    border: 1px #ff1a1a solid;
+    display:block;
+    
+}
+
+form button {
+    background-color:#191919;
+    border-radius:5px;
+    padding:5px 10px;
+    border:3px solid #FF0000;
+    text-decoration:uppercase;
+    margin:3px;
+    margin-top:15px;
+    margin-bottom:5px;;
+    width: 130px
+    text-align:center;
+    margin:0px auto;
+    color:#FF0000;
+}
+
+form button:hover {
+    background-color:#FF0000;
+    color:#000000;
+    border:3px solid #191919;
+    cursor:url(../images/stop-two.png), auto;
+}
+
+form#center input {
+    text-align:center;
+}
+
+textarea {
+    height:150px;
+}
+
+@media screen and (max-width:1024px) {
+    .columnA,.columnB,.columnC {
+        width:auto;
+        margin:1% auto;
+    }
+    
+    .mainWidth {
+        width:100%;
+        margin:20px auto;
+    }
+    
+    .alignRight p {
+        width:auto;
+        margin-right:200px;
+        text-align:left;
+    }
+    
+    .alignRight h2 {
+        text-align:justify;
+    }
+    
+    
+    
+    
+}
