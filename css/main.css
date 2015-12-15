@@ -1,12 +1,28 @@
 /*GLOBAL STYLES*/
 
 /*
-==============
+=============
 GLOBAL STYLES
-==============
+=============
 */
 
-/* * {color:#000000;} BE CARFUL USING THIS | COULD BE DANGEROUS*/
+/* * {color:#000000;} BE CAREFUL USING THIS | COULD BE DANGEROUS*/
+
+/* #33CC33=LIGHT GREEN 
+   #FFFFFF=WHITE MAIN BODY COLOR
+   #33CCFF=BLUE LINK HOVER COLOR/HOME COLOR
+   #F1F1F1=GREY HEADER COLOR
+   #FFCC00=YELLOW GROUP TABLE COLOR
+   #009FD4=DARK BLUE TABLE
+   #D2F4FF=BLUE ALTERNATING ROW
+   #FFF5CC=YELLOW ALTERNATING ROW
+*/   
+   
+   
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------- GLOBAL STYLES -------------*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700);
 
 html, body {
     height:100%;
@@ -15,45 +31,42 @@ html, body {
 body {
     margin:0px;
     padding:0px;
-    background-color:#000000;
-    font-family:'Lucida Sans', Verdana, sans-serif;
+    background-color:#191919;
+    /*font-family:'Lucidia Sans', Verdana, sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
     font-size:16px;
     font-weight:500;
-    color:#FF0000;
+    color:#FFFFFF;
 }
 
-@media screen and (max-width: 600px) {
-    body {background-color:#FF0000;}
-    h1 {color:#000000;}
-}
-
-h1, h2, h3 1{
-color:#FF0000;
-margin:0px;
-padding:0px;
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color:#FF0000 !important;
+    margin:0px;
+    padding:0px;
 }
 
 h1 {
-    font-size:3em;
+    font-size:2.5em;
 }
 
 p {
     margin:15px 0px;
-    line-height:15px;
+    line-height:20px;
 }
 
-strong, b {
+b, strong {
     color:#FF0000;
 }
 
 a {
-   color:#FF0000;
-   text-decoration:none;
-
+    color:#FF0000;
+    text-decoration:none;
 }
 
 a:hover {
-    color:#000000;
+    color:#33CCFF;
+    text-decoration:underline;
 }
 
 figure {
@@ -61,98 +74,160 @@ figure {
     padding:0px;
 }
 
-hr {
-    margin:25px 0px;
+/*hr {*/
+/*    padding:25px 0px;*/ /*-- COMMENTED OUT IN HTML TAMBIEN --*/
+/*    clear:both;*/
+/*}*/
+
+footer {
+    clear:both;
+    margin-top:26px;
+    
+    
 }
 
-/*HEADER STYLES*/
+footer p {
+    text-align:center;
+    font-size:17px;
+    
+}
+
+footer p a {
+    color:#FF0000;
+    text-decoration:none;
+}
+
+footer p a:hover {
+    color:#33CCFF;
+    text-decoration:none;
+}
+
+.copyright {
+    overflow:hidden;
+    padding:30px 0px;
+    border-top:3px dotted #FF0000;
+    background-color:#191919;
+    display:block;
+}
+
+.social {
+    text-align:center;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- END OF GLOBAL STYLES -------------*/
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------- HEADER STYLES -------------*/ 
 
 header {
-    background-color:#000000;
+    background-color:#F1F1F1;
     /*height:150px;*/
+    background:url(../images/header_background.jpg);
 }
 
+
 #header {
-    padding:15px 0px;
+    padding:15px 0px /*15 ON TOP/BOTTOM, 0 ON LEFT/RIGHT*/;
     position:relative;
 }
 
 #logo {
-    padding:15px;
-    color:#F1F1F1;
+    padding:15px /*15px ALL AROUND*/;
+    color:#FF0000;
 }
 
 #logo:hover {
-    color:#000000;
+    color:#33CCFF;
     text-decoration:none;
 }
 
-/*NAV STYLES*/
+/*-------------------------------------------------------------------------------------------------------------------------------------- END OF HEADER STYLES -------------*/
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------- NAVIGATION STYLES -------------*/
 
 #menu {
     position:absolute;
     top:30px;
     right:5%;
     text-decoration:none;
-}
+}  
 
 /*#menu ul {*/
-/*    display:block;*/
-/*    background-color:#000000;*/
+/*    display:inline;*/
 /*}*/
 
 #menu li {
     display:inline;
-    background-color:#000000);
+    margin:0px 9px; /*NAV BLOCK POSITION*/
+    font-weight:550; 
     text-transform:uppercase;
     text-align:center;
 }
 
-#menu li a:hover{
-    color:#F1F1F1;
+#menu li a:hover {
+    text-decoration:none;
 }
 
-#menu li:after{
-    content:"";
-    padding:16px 10px;
-    color:#F1F1F1;
-}
-
-li:currentPage {
-    color:#FFFF00;
-}
-
-#name:hover {
-    color:#FF6600;
+#menu li:after {
+    content:"|";
+    padding:16px 20px;
+    color:rgb(51, 204, 51);
 }
 
 .currentPage a {
-    color:#FFFF00;
+    color:#33CCFF;
+    text-decoration:none;
 }
 
+/*---------------------------------------------------------------------------------------------------------------------------------- END OF NAVIGATION STYLES -------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------- HEADER STYLES -------------*/
+
 #bannerHome {
-    border-top:3px solid #AD5CFF;
-    padding:90px 0px;
-    background:url(../images/allBlacks.jpg) no-repeat bottom center #000000;
+    border-top:3px solid #FF0000;
+    padding:20px 0px;
+    background:url(../images/banner-index.jpg) no-repeat center center #33CCFF;
     background-size:cover;
     overflow:hidden;
 }
 
-.bannerAbout {
-    border-top:3px solid #AD5CFF;
-    padding:90px 0px;
-    background:url(../images/banner-about.jpg) no-repeat center center #000000;
+#bannerAbout {
+    border-top:3px solid #FF0000;
+    padding:20px 0px;
+    background:url(../images/banner-about.jpg) no-repeat center center #33CCFF;
+    background-size:cover;
+    overflow:hidden;
+    
+}
+
+#bannerContact {
+    border-top:3px solid #FF0000;
+    padding:20px 0px;
+    background:url(../images/banner-contact.jpg) no-repeat center center;
     background-size:cover;
     overflow:hidden;
 }
 
 .bannerTitle {
     text-align:center;
-    color:#FF0000;
-    background-color:transparent;
-    font-size:3em;
-    text-shadow:4px 4px #000000;
+    color:#FFFFFF;
+    font-size:4em;
 }
+
+#banner {
+    height:200px; /* IMPORTANT */
+}
+
+.backgroundImage {
+    background:url(../images/background_image.jpg) no-repeat center center;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- END OF HEADER STYLES -------------*/
+
+
+/*----------------------------------------------------------------------------------------------------------------------------------------- MAIN BODY SECTION -------------*/
 
 .mainWidth {
     width:1200px;
@@ -164,17 +239,20 @@ li:currentPage {
     margin-bottom:25px;
 }
 
+/*---------------------------------------------------------------------------------------------------------------------------------- END OF MAIN BODY SECTION -------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------- COLUMN STYLES -------------*/
+
 .columnA, .columnB, .columnC {
     width:384px;
+    float:left;
+    text-align:center;
 }
 
 .columnA, .columnB {
     float:left;
     margin-right:24px;
-}
-
-#main {
-    margin-bottom:25px;
 }
 
 .columnC {
@@ -183,64 +261,74 @@ li:currentPage {
 
 .columnA h2, .columnB h2, .columnC h2 {
     color:#FF0000;
-    font-size:28px;
-    font-weight:600;
-    text-transform:none;
+    font-size:2em;
+    font-weight:900;
+    /*text-transform:uppercase;*/
     text-align:center;
 }
 
-.columnA h2, .columnB h2, .columnC h2 {
+.columnA p, .columnB p, .columnC p {
+    text-align:justify;
     padding:0px;
 }
 
-.likeImage {
-    width:384px;
-    height:300px;
-    background-color:#000000;
-}
+/*.likeImage {*/
+/*    width:384px;*/
+/*    height:225px;*/
+/*    background-color:#FF0066;*/
+/*}*/
 
 .likeImage span {
-    color:#FF0000;
+    color:#FFFFFF;
+    background-color:#33CCFF;
     display:block;
-    font-size:25px;
-    background-color:#000000;
+    font-size:2em;
+    text-decoration:none;
+    font-weight:700;
     text-align:center;
     text-transform:uppercase;
     padding:18px 0px;
-}
-
-/*BUTTON STYLES*/
-
-a.blackButton {
-    background-color:#191919;
-    border-radius:5px;
-    padding:5px 10px;
-    border:3px solid #FF0000;
-    text-decoration:uppercase;
-    margin:3px;
-    margin-top:15px;
-    margin-bottom:5px;
-    float:left;
-    width: 130px
-    text-align:center;
-    margin:0px auto;
     
-
 }
 
-.blackButton:hover {
-    background-color:#FF0000;
+
+/*-------------------------------------------------------------------------------------------------------------------------------------- END OF COLUMN STYLES -------------*/
+
+
+/*--------------------------------------------------------------------------------------------------------------------------------------------- BUTTON STYLES -------------*/
+
+a.button, button {
+    color:#FFFFFF;
+    border-radius:6px; 
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -o-border-radius:6px;
+    padding:15px 20px;
+    background-color:#CCCC33;
+    border:4px solid #B8B82E;
+    float:left;
+    text-transform:uppercase;
+    font-weight:700;
+    /*cursor:not-allowed;*/
+}
+
+a.button:hover, button:hover {
     color:#000000;
-    border:3px solid #191919;
-    cursor:url(../images/stop-two.png), auto;
+    text-decoration:none;
+    background-color:#FF6600;
+    border:4px solid #E65C00;
+    /*cursor:url(../images/hkarmycursor.png), auto;*/
 }
 
 #bannerButton {
-    width:155px;
-    margin:0px auto;
+    text-align:center;
+    margin:25px 0px;
 }
 
-/*ABOUT ME STYLES*/
+/*-------------------------------------------------------------------------------------------------------------------------------------- END OF BUTTON STYLES -------------*/
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------------- ABOUT ME STYLES --------------*/
 
 .alignLeft {
     float:left;
@@ -254,194 +342,212 @@ a.blackButton {
     text-align:justify;
 }
 
-/*FOOTER STYLES*/
-footer {
-    clear:both;
-    margin-top:15px;
-}
+/*------------------------------------------------------------------------------------------------------------------------------------ END OF ABOUT ME STYLES --------------*/
 
-.copyRight {
-    overflow:hidden;
-    padding:30px 0px;
-    border-top:3px dotted #191919;
-    background-color:#000000;
-    display:block;
-}
-
-/*#footerButton {*/
-/*    color:#191919;    */
-/*}*/
-
-/*#footerButton:hover {*/
-/*    color:#FF0000;*/
-/*}*/
-
-footer p {
-    text-align:center;
-    font-size:18px;
-    margin-top:15px;
-}
-
-.social {
-    text-align:center;
-}
-
-.copyRight p a {
-    color:#191919;
-}
-
-.copyRight p a:hover {
-    color:#FF0000;
-}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------EXTRA STYLES--------------*/
 
 .fa {
-    background-color:#000000;
-    border:3px solid #000000;
-    font-size:1.5em !important;
-    margin:2px;
-    height:28px;
-    width:28px;
+    background-color:#33CCFF;
+    border:3px solid #FFF;
+    font-size:2em !important;
+    margin:15px;
+    color:#FFF;
+    height:58px;
+    width:58px;
     padding:10px;
     border-radius:100%;
     text-align:center;
-    color:#FF0000;
-    
-    
 }
 
 .fa:hover {
-    background-color:#000000;
-    color:#FF0000;
+    /*background-color:#33CCFF;*/
+    border:3px solid #FFF;
 }
 
-.fa-linkedin {background-color:#000000;}
+.fa-facebook {background-color:#3B5998;}
+.fa-twitter {background-color:#55ACEE;}
+.fa-instagram {background-color:#125688;}
+.fa-linkedin {background-color:#0077B5;}
 
-#sonyThing {
+
+/*----------------------------------------------------------------------------------------------------------------------------------------END OF EXTRA STYLES-------------*/
+
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------TABLE STYLES*/
+
+#personalTable {
+    width:900px;
+    margin:0px auto;
+    text-align:justify;
     text-align:center;
 }
 
-#bannerHome {
-    padding:90px;
-    background:url(../images/allBlacks.jpg);
-    background-color:transparent;
+#personalHeader th {
+    color:#FFF;
+    background-color:#33CCFF;
+    /*text-shadow:2px 2px #000;*/
+    padding:10px 20px;
+    font-size:1.3em;
 }
 
-#myData {
-    width:900px;
-    margin:0px auto;
+.personalTr th {
+    background-color:#33CCFF;
+    color:#FFF;
+    font-weight:bold;
 }
 
-#myHeader th {
-    background-color:#191919;
-    color:#FF0000;
-    padding:10px;
-    font-size:1.25em;
+.personalAlternating {
+    background-color:#D2F4FF;
 }
 
-#groupHeader th {
-    background-color:#191919;
-    color:#FF0000;
-    padding:10px;
-    font-size:1.25em;
-}
-
-#groupData {
-    width:900px;
-    margin:0px auto;
-}
-
-.weeks {
-    background-color:#191919;
-}
-
-th.black {
-    background-color:#000000;
-}
-
-.grayShade:hover {
-    background-color:#FF0000;
-    color:#FFFFFF;
-}
-
-table {
+tfoot tr {
+    background-color:#FF9977;
     text-align:center;
-    border-radius:6px;
+    font-size:1.1em;
 }
 
-.asterisk {
-    color:#FFFF00;
-    font-weight:900;
-}
-
-/*form {*/
-/*    margin-top:25px;*/
-/*    padding:5px;*/
-/*    background-color:#191919;*/
-/*    border-radius:15px;*/
-/*    width:550px;*/
-/*    height:500px;*/
-/*}*/
-
-input#private,#email,#username, textarea {
-    border-radius:15px;
-    box-shadow:3px 3px 3px #FFFF00;
-    border: 1px #ff1a1a solid;
-    display:block;
+tr:hover {
+    background-color:#FF7041;
+    color:#FFF;
+    cursor:hover;
     
 }
 
-form button {
-    background-color:#191919;
-    border-radius:5px;
-    padding:5px 10px;
-    border:3px solid #FF0000;
-    text-decoration:uppercase;
-    margin:3px;
-    margin-top:15px;
-    margin-bottom:5px;;
-    width: 130px
-    text-align:center;
+.totalBold {
+    font-weight:bold;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------*/
+#groupTable {
+    width:900px;
     margin:0px auto;
-    color:#FF0000;
-}
-
-form button:hover {
-    background-color:#FF0000;
-    color:#000000;
-    border:3px solid #191919;
-    cursor:url(../images/stop-two.png), auto;
-}
-
-form#center input {
     text-align:center;
+}
+
+#groupHeader th {
+    color:#FFF;
+    background-color:#FFCC00;
+    /*text-shadow:2px 2px #000;*/
+    padding:10px 20px;
+    font-size:1.3em;
+}
+
+
+.groupTr th {
+    background-color:#FFCC00;
+    color:#FFF;
+    font-weight:bold;
+}
+
+.groupAlternating {
+    background-color:#FF0000;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------END OF TABLE STYLES*/
+
+/*----------------------------------------------------------------------------------------------------------------------------------FORMS STYLES*/
+
+.asterisk {
+    color:#FF0000;
+    font-weight:700;
+}
+
+#secondForm {
+    margin-top:45px;
+}
+
+input, textarea {
+    border-radius:50px;
+    box-shadow:1px 1px 1px #DDD inset;
+    border:2px solid #C3C3A2;
+    color:#C3C3A2;
+    /*height:25px;*/ /*HEIGHT OF COMMENT BOX*/
+    display:block;
+    margin:15px;
 }
 
 textarea {
-    height:150px;
+    height:200px;
 }
 
-@media screen and (max-width:1024px) {
-    .columnA,.columnB,.columnC {
+.form {
+    margin:50px 50px;
+    background-color:#F1F1F1;
+    border-radius:15px;
+    padding:25px;
+    width:25%;
+    
+}
+
+#wufoo-z1oxgmwf14sdt58 {
+    width:90%;
+    border-radius:6px;
+    background-color:#F1F1F1;
+    margin:20px 0px auto;
+    border:4px solid #85E085;
+}
+
+.mobileContact h2 {
+    margin-top:20px;
+}
+
+.mobileContact p {
+    margin-left:50px;
+}
+
+/*===================== QUERY - 1024px =======================================*/
+
+@media screen and (max-width: 1024px) {
+    .button {
+        width:90px;
+        margin-left:44%;
+    }
+    
+    .columnA, .columnB, .columnC {
         width:auto;
         margin:1% auto;
     }
     
-    .mainWidth {
-        width:100%;
-        margin:20px auto;
-    }
     
     .alignRight p {
-        width:auto;
-        margin-right:200px;
-        text-align:left;
+        width:90%;
+        margin-right:150px;
     }
     
     .alignRight h2 {
-        text-align:justify;
+        width:90%;
+        margin-left:36%;
     }
     
+    section aside figure img {
+        width:50%;
+        margin-left:65% auto;
+        height:50%;
+        
+    }
     
+    #bannerHome {
+        width:100%;
+    }
     
+    .columnA p, .columnB p, .columnC p {
+        width:90%;
+        margin:1% auto;
+    }
+    
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------END OF FORMS STYLES*/
+
+.galleryImages {
+    background-color:#191919;
+    padding:5px;
+    border:2px solid #FF0000;
+    width:290px;
+    float:left;
+    margin:4px;
+    text-align:center;
+}
+
+.figNewton {
     
 }
