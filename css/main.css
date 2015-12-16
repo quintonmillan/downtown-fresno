@@ -172,7 +172,7 @@ header {
 #menu li:after {
     content:"|";
     padding:16px 20px;
-    color:rgb(51, 204, 51);
+    color:#FF0000;
 }
 
 .currentPage a {
